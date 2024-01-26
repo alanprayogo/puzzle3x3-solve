@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Puzzle.AI</title>
+
+    <style>
+      /* Ganti warna dan ukuran ikon */
+      .custom-icon {
+        color: #17a2b8; /* Ganti warna ikon */
+        font-size: 2em; /* Ganti ukuran ikon */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row text-center mt-5">
+        <h1>PUZZLE SOLVER</h1>
+        <div class="col-4 mt-5">
+          <div
+            class="container bg-info pt-2"
+            id="puzzle-goals"
+            style="width: 320px; height: 320px"
+          ></div>
+          <div class="row">
+            <h3 class="mt-4">Puzzle Goals</h3>
+          </div>
+        </div>
+        <div class="col-4 mt-5">
+          <div
+            class="bg-info pt-2 m-auto"
+            id="puzzle-games"
+            style="width: 320px; height: 320px"
+          ></div>
+          <div class="row m-auto" style="width: 300px">
+            <div class="col-6">
+              <button
+                type="button"
+                class="btn btn-link mt-3 text-decoration-none"
+              >
+                <i class="fa-solid fa-lightbulb custom-icon"></i>
+              </button>
+            </div>
+            <div class="col-6">
+              <h3 class="mt-4">Turn : <span id="turns">0</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mt-5">
+          <h4>Hint :</h4>
+          <p>Geser kotak 2 ke kiri</p>
+          <p>Geser kotak 5 ke bawah</p>
+          <p>Geser kotak 3 ke kanan</p>
+          <p>Geser kotak 2 ke atas</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/cb14fdf8d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
